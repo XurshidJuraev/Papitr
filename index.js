@@ -28,8 +28,9 @@ app.get('/', (_, res)=>{
         console.log(text_top);
         await browser.close()
 
-        const data = JSON.stringify(text_top)
-        res.send(JSON.parse(data));
+        // const data = JSON.stringify(text_top)
+        // res.send(JSON.parse(data));
+        res.send(text_top)
     }
     
     start()
